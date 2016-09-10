@@ -35,7 +35,7 @@ global = {
   \key f \minor
   \numericTimeSignature
   \time 6/8
-  \tempo 4.=68 % "Eerily"?
+  \tempo 4.=67 % "Eerily"?
 }
 
 right = \relative c' {
@@ -51,11 +51,10 @@ right = \relative c' {
   r16 aes, c f aes c r aes, c f aes c | % 8
   r16 g, c e g c r g, c e g c | % 9
   r16 g, c e g c r g, c e g c | % 10
-  R1*6/8\fermataMarkup | % 11
-  \bar "||"
-  \break
+  R1*6/8 | % 11
+  \bar "||" \break
   
-  \tempo 4=68
+  \tempo 4=67
   \time 3/4 <f, f'>8 <aes aes'> <c c'> <aes aes'> <c c'> <g g'> | % 12
   \time 2/4 <e e'> <g g'> <des' des'> <aes aes'> | % 13
   \time 4/4 <f f'>8 <aes aes'> <c c'> <g g'> <e e'> <g g'> <aes aes'> <g g'> | % 14
@@ -67,7 +66,8 @@ right = \relative c' {
   <des des'>8 <c c'> <bes bes'> <c c'> <g g'>2 | % 20
   <aes aes'>8 <f f'> <g g'> <f f'> <bes bes'> <f f'> <g g'> <f f'> | % 21
   <aes aes'> <f f'> <g g'> <f f'> <ges ges'> <f f'> <aes aes'> <f f'> | % 22
-  R1*4/4\fermataMarkup % 23
+  R1*4/4 | % 23
+  R1*4/4 | % 24
   \bar "|."
 }
 
@@ -84,7 +84,7 @@ left = \relative c, {
   <f f'>4. <f f'> | % 8
   <e e'>4. <e e'> | % 9
   <e e'>4. <e e'> | % 10
-  R1*6/8\fermataMarkup % 11
+  R1*6/8 | % 11
   
   \time 3/4 R1*3/4 | % 12
   \time 2/4 <e e'>4 des' | % 13
@@ -98,9 +98,9 @@ left = \relative c, {
   <<{ f'1~ } \\
     { f,2~ f8 f8~ f4~ }>> | % 21
   <<{ f'1 } \\
-    { f,8 f~ f f~ f f~ f f } >> | % 22
-  <f f'>1\fermata | % 23
-  
+    { f,8 f~ f f~ f f~ f f }>> | % 22
+  <f f'>1~ | % 23
+  <f f'>1 | % 24
 }
 
 \score {

@@ -42,58 +42,49 @@ global = {
 right = \relative c'' {
   \global
 
-  ees2 c |
-  d1 |
-  ees2 g |
-  d1 | \break
-  c2 <g' c>4 <f bes> |
-  <g c>2 ees |
-  c2 <g' c>4 <f bes> |
-  <g c>1 |
+  ees2 c | % 1
+  d1 | % 2
+  ees2 g | % 3
+  d1 | \break % 4
+  c2 <g' c>4 <f bes> | % 5
+  <g c>2 ees | % 6
+  c2 <g' c>4 <f bes> | % 7
+  <g c>1 | % 8
   \bar "||" \break
   
-  ees2 g |
-  d2 g |
-  c,2 <g' c>4 <f bes> |
-  <g c>2 ees | \break
-  c2 <g' c>4 <f bes> |
-  <g c>2 ees4 d |
-  c2 c4 bes |
-  g2 bes' | \break
-  bes2 ees,4 g |
-  f2 aes |
-  <c, g'>2. ees4 |
-  d2 c |
+  ees2 g | % 9
+  d2 g | % 10
+  c,2 <g' c>4 <f bes> | % 11
+  <g c>2 ees | \break % 12
+  c2 <g' c>4 <f bes> | % 13
+  <g c>2 ees4 d | % 14
+  c2 c4 bes | % 15
+  g2 bes' | \break % 16
+  bes2 ees,4 g | % 17
+  f2 aes | % 18
+  <c, g'>2. ees4 | % 19
+  d2 c | % 20
   \bar "|."
-  
-  
 }
 
 left = \relative c' {
   \global
 
-  c1 |
-  g1 |
-  c1 |
-  g1 |
-  aes1 |
-  g1 |
-  aes1 |
-  g1 |
+  c1 | g1 | c1 | g1 | % 4
+  aes1 | g1 | aes1 | g1 | % 8
   
-  <c,, c'>1 |
-  <g' g'>1 |
-  <aes aes'>1 |
-  <g g'>1 |
-  <aes aes'>1 |
-  <g g'>1 |
-  <aes aes'>1 |
-  <bes bes'>1 |
-  <ees ees'>1 |
-  <f, f'>1 |
-  <c c'>1~ |
-  <c c'>1 |
-  
+  <c,, c'>1 | % 9
+  <g' g'>1 | % 10
+  <aes aes'>1 | % 11
+  <g g'>1 | % 12
+  <aes aes'>1 | % 13
+  <g g'>1 | % 14
+  <aes aes'>1 | % 15
+  <bes bes'>1 | % 16
+  <ees ees'>1 | % 17
+  <f, f'>1 | % 18
+  <c c'>1~ | % 19
+  <c c'>1 | % 20 
 }
 
 \score {

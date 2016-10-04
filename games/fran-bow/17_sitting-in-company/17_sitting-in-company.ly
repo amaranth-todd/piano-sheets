@@ -1,5 +1,7 @@
 \version "2.18.2"
 
+%%% REDO ALL BAR NUMBERS! %%%
+
 \header {
   title = \markup {
     \override #'(font-name . "GNUTypewriter")
@@ -50,11 +52,10 @@ right = \relative c'' {
   \repeat volta 2 {
     r4. bes8 f' e d e | % 5
     r4. bes8 f' e d4 | % 6
-    r4. a8 f' e d a | % 7
   }
   \alternative {
-    { r4. a8 f' e d4 | } % 8
-    { cis4 cis8 a d a e'4 | } % 9
+    { r4. a8 f' e d a | r4. a8 f' e d4 | } % 8
+    { r4. f8 e d a4 | cis4 cis8 a d a e'4 | } % 9
   }
   \bar "||" \break
   
@@ -96,11 +97,10 @@ left = \relative c' {
   \repeat volta 2 {
     bes,8 d f r r2 | % 5
     bes,8 d f r r2 | % 6
-    a,8 d f r r2 | % 7
   }
   \alternative {
-    { a,8 d f r r2 | } % 8
-    { f,8 a cis r r2 | } % 9
+    { a,8 d f r r2 | a,8 d f r r2 | } % 8
+    { a,8 d f r r2 | f,8 a cis r r2 | } % 9
   }
   
   f8 c a' r r2 | % 10
